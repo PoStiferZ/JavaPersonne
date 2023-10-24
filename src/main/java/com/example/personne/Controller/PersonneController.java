@@ -102,6 +102,8 @@ public class PersonneController {
     protected void onChoiceBoxSelected() {
         String selectedOption = choiceBox.getValue();
 
+        create.setVisible(true);
+
         if (selectedOption.equals("Avocat")) {
             nombreAffairesLabel.setVisible(true);
             nombreAffairesField.setVisible(true);
