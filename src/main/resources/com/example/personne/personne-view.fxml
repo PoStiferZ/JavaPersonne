@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.personne.Controller.PersonneController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="998.0" prefWidth="387.0">
+         <children>
+             <Label layoutX="76.0" layoutY="14.0" prefHeight="36.0" prefWidth="23.0" text="ID" textFill="#393939">
+                 <font>
+                     <Font name="Rubik-Bold" size="18.0" />
+                 </font></Label>
+             <TextField fx:id="nomField" layoutX="76.0" layoutY="118.0" prefHeight="36.0" prefWidth="344.0" />
+             <Label layoutX="76.0" layoutY="91.0" text="Nom" textFill="#393939">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font></Label>
+             <TextField fx:id="idField" layoutX="76.0" layoutY="50.0" prefHeight="36.0" prefWidth="344.0" />
+             <Label layoutX="76.0" layoutY="164.0" text="Numéro sécurité" textFill="#393939">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font></Label>
+             <TextField fx:id="numeroSecuField" layoutX="76.0" layoutY="191.0" prefHeight="36.0" prefWidth="344.0" />
+
+             <Label layoutX="76.0" layoutY="237.0" text="Type de personne" textFill="#393939">
+                 <font>
+                     <Font name="Rubik-Bold" size="18.0" />
+                 </font>
+             </Label>
+             <ChoiceBox fx:id="choiceBox" layoutX="76.0" layoutY="272.0" prefHeight="36.0" prefWidth="344.0" />
+
+             <Label fx:id="nombreAffairesLabel" layoutX="76.0" layoutY="323.0" text="Nombre d'affaires" textFill="#393939" visible="false">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font></Label>
+             <TextField fx:id="nombreAffairesField" layoutX="76.0" layoutY="346.0" prefHeight="36.0" prefWidth="344.0" visible="false" />
+
+             <Label fx:id="adresseCabinetLabel" layoutX="76.0" layoutY="395.0" text="Adresse du cabinet" textFill="#393939" visible="false">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font></Label>
+             <TextField fx:id="adresseCabinetField" layoutX="76.0" layoutY="425.0" prefHeight="36.0" prefWidth="344.0" visible="false" />
+
+             <Label fx:id="ancienneteLabel" layoutX="76.0" layoutY="323.0" text="Ancienneté" textFill="#393939" visible="false">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font></Label>
+             <DatePicker fx:id="anciennetePicker" layoutX="76.0" layoutY="346.0" prefHeight="36.0" prefWidth="344.0" visible="false" />
+
+             <Label fx:id="nomDuStandLabel" layoutX="76.0" layoutY="395.0" text="Nom du stand" textFill="#393939" visible="false">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font></Label>
+             <TextField fx:id="nomDuStandField" layoutX="76.0" layoutY="425.0" prefHeight="36.0" prefWidth="344.0" visible="false" />
+
+
+             <Label fx:id="nombreCoursLabel" layoutX="76.0" layoutY="323.0" text="Nombre de cours" textFill="#393939" visible="false">
+                 <font>
+                     <Font name="Rubik-Bold" size="18.0" />
+                 </font></Label>
+             <TextField fx:id="nombreCoursField" layoutX="76.0" layoutY="346.0" prefHeight="43.0" prefWidth="344.0" visible="false" />
+
+             <Label fx:id="specialiteLabel" layoutX="76.0" layoutY="395.0" text="Spécialité" textFill="#393939" visible="false">
+                 <font>
+                     <Font name="Rubik-Bold" size="18.0" />
+                 </font></Label>
+             <TextField fx:id="specialiteField" layoutX="76.0" layoutY="425.0" prefHeight="43.0" prefWidth="344.0" visible="false" />
+
+             <!-- Début : Label et Field Vacataire et Permanent -->
+            <Label fx:id="numeroBureauLabel" layoutX="76.0" layoutY="556.0" text="Numéro bureau" textFill="#393939" visible="false">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font>
+            </Label>
+             <TextField fx:id="numeroBureauField" layoutX="76.0" layoutY="583.0" prefHeight="36.0" prefWidth="344.0" visible="false" />
+
+            <Label fx:id="nombreVacationsLabel" layoutX="76.0" layoutY="556.0" text="Nombre vacations" textFill="#393939" visible="false">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font>
+            </Label>
+             <TextField fx:id="nombreVacationsField" layoutX="76.0" layoutY="583.0" prefHeight="36.0" prefWidth="344.0" visible="false" />
+             <!-- Fin : Label et Field Vacataire et Permanent -->
+
+             <!-- Début : Choix du type d'enseignant -->
+             <Label fx:id="choiceBox2Label" layoutX="76.0" layoutY="478.0" text="Type d'enseignant" textFill="#393939" visible="false">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choiceBox2" layoutX="76.0" layoutY="513.0" prefHeight="36.0" prefWidth="344.0" visible="false" />
+             <!-- Fin : Choix du type d'enseignant -->
+
+             <!-- Début : Bouton d'ajout d'une personne -->
+             <Button fx:id="create" layoutX="139.0" layoutY="490.0" mnemonicParsing="false" onAction="#createPersonButton" prefHeight="43.0" prefWidth="197.0" text="CREER" textAlignment="CENTER">
+                 <font>
+                     <Font size="18.0" />
+                 </font></Button>
+             <!-- Fin : Bouton d'ajout d'une personne -->
+
+
+         </children></AnchorPane>
+    <AnchorPane prefHeight="645.0" prefWidth="706.0">
+         <children>
+             <Label fx:id="welcomeText" alignment="CENTER" layoutX="20.0" layoutY="247.0" prefHeight="304.0" prefWidth="457.0" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>
